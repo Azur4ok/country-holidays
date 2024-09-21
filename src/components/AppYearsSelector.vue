@@ -14,7 +14,6 @@ import { useRoute } from 'vue-router'
 const countryStore = useCountryStore()
 const route = useRoute()
 const selectedYear = ref(new Date().getFullYear())
-console.log(selectedYear);
 
 const years = computed(() => Array.from({ length: 11 }, (_, i) => 2020 + i))
 
